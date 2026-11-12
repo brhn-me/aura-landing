@@ -51,7 +51,7 @@
 @media (min-width: 900px) { .cl-layout { grid-template-columns: 220px 1fr; gap: 56px; } }
 .cl-nav summary { cursor: pointer; font-weight: 500; padding: 10px 0; }
 @media (min-width: 900px) {
-  .cl-nav { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; }
+  .cl-nav { position: sticky; top: calc(var(--hdr, 56px) + 16px); align-self: start; max-height: calc(100vh - var(--hdr, 56px) - 32px); overflow-y: auto; }
   .cl-nav summary { display: none; }
 }
 .cl-nav ul { display: grid; gap: 2px; font-size: 0.9375rem; }

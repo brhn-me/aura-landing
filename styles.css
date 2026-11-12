@@ -292,7 +292,8 @@ html:has(.show) { scroll-snap-type: y mandatory; }
 
 
 /* Pages other than the landing: the header sits above the content */
-.top-static { position: static; border-bottom: 1px solid var(--line); }
+.top-static { position: sticky; top: 0; } /* every page: the same header as the home page (sticky, no line, the soft blur) */
+html:has(.top-static) { scroll-padding-top: 72px; } /* anchors land below the sticky header on every width */
 
 /* A current phone, everywhere (landing, demo page, guide): .phone-frame > .phone-screen > img|video|iframe.
    Sizes follow a 390 × 844 screen with a 7 px bezel (404 × 858 overall) and scale with the frame's width:

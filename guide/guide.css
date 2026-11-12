@@ -1,6 +1,6 @@
 /* The guide (guide/*.html, built by scripts/landing-guide.py): a sidebar of pages and their sections, the text, and an
    "On this page" rail on wide screens. Tokens, fonts, header, footer, .code and .copy: ../styles.css. */
-.top-static { position: static; }
+.top-static { position: sticky; top: 0; }
 .top-nav a[aria-current="page"] { color: var(--fg); }
 
 .docs { display: grid; gap: 0 48px; padding-block: 24px 96px; }
@@ -27,7 +27,7 @@
 .docs-nav-head { display: none; }
 
 @media (min-width: 960px) {
-  .docs-nav { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; padding-right: 4px; }
+  .docs-nav { position: sticky; top: calc(var(--hdr, 56px) + 16px); align-self: start; max-height: calc(100vh - var(--hdr, 56px) - 32px); overflow-y: auto; padding-right: 4px; }
   .docs-menu-btn, .docs-scrim { display: none !important; }
 }
 
@@ -90,7 +90,7 @@ kbd { font-family: var(--mono); font-size: 0.8125em; padding: 1px 6px; border: 1
 /* On this page (wide screens) */
 .docs-rail { display: none; }
 @media (min-width: 1240px) {
-  .docs-rail { display: block; position: sticky; top: 24px; align-self: start; font-size: 0.875rem; }
+  .docs-rail { display: block; position: sticky; top: calc(var(--hdr, 56px) + 16px); align-self: start; font-size: 0.875rem; }
   .rail-title { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-2); margin-bottom: 8px; }
   .rail-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
   .rail-list a { display: block; padding: 5px 10px; color: var(--fg-2); text-decoration: none; border-left: 2px solid transparent; }
