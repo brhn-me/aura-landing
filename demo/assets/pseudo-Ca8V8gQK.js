@@ -1,0 +1,1 @@
+var e={a:`á`,e:`é`,i:`í`,o:`ö`,u:`ü`,y:`ý`,c:`ç`,n:`ñ`,s:`š`,z:`ž`,A:`Å`,E:`É`,I:`Î`,O:`Ö`,U:`Ü`,Y:`Ý`,C:`Ç`,N:`Ñ`,S:`Š`,Z:`Ž`};function t(t){let n=0,r=t.replace(/(\{\w+\}|<\/?\w+>)|([A-Za-z])/g,(t,r,i)=>r||(n++,e[i]??t)),i=Math.ceil(n*.35);return`⟦${r}${i>0?` ${`~`.repeat(i)}`:``}⟧`}export{t as pseudo};

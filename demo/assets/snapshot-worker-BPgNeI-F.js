@@ -1,0 +1,1 @@
+(function(){function e(e){try{let t=JSON.parse(e);return!t||typeof t!=`object`||!Array.isArray(t.tracks)?null:{format:t.format,tracks:t.tracks.length}}catch{return null}}let t=globalThis;t.onmessage=n=>t.postMessage(e(n.data))})();

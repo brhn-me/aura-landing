@@ -1,0 +1,1 @@
+import{Xo as e}from"./index-CV1B-rEu.js";import{r as t}from"./SectionLayout-DZ6w5QWr.js";function n(){return e(t,{area:`library`})}export{n as Component};

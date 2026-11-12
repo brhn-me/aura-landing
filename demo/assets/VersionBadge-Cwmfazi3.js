@@ -1,0 +1,1 @@
+import{Gf as e,Td as t,Xo as n}from"./index-CV1B-rEu.js";var r=`version-badge inline-block align-middle mr-1 px-1.5 rounded-pill border border-line text-micro text-fg-muted`;function i({version:i}){let a=e(t);return n(`span`,{className:r,children:a(`version.${i}`)})}export{i as default};

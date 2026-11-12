@@ -1,0 +1,2 @@
+import{Mp as e,Np as t,Op as n,Xo as r}from"./index-CV1B-rEu.js";function i({items:i,announceNew:a=!1}){let o=e(null),[s,c]=t(``),l=i.map(e=>`${e.key}:${+!!e.finished}:${e.text}`).join(`
+`);return n(()=>{let e=o.current;if(o.current=new Map(i.map(e=>[e.key,e.finished])),!e)return;let t=i.filter(t=>t.finished&&(a?e.get(t.key)!==!0:e.get(t.key)===!1));t.length>0&&c(t.map(e=>e.text).join(`. `))},[l,a]),r(`p`,{role:`status`,className:`sr-only`,children:s})}export{i as t};

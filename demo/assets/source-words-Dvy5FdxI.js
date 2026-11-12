@@ -1,0 +1,1 @@
+import{Uf as e,Wa as t}from"./index-CV1B-rEu.js";var n=e(t),r=Object.defineProperties({editTitle:e=>n(`source.editTitle`,{name:e})},Object.fromEntries(Object.keys(t.en.source).filter(e=>e!==`editTitle`).map(e=>[e,{get:()=>n(`source.${e}`),enumerable:!0}])));export{r as t};

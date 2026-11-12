@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aura guide</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="guide/index.html">
+  <meta http-equiv="refresh" content="0; url=guide/index.html">
+  <script>
+    // The guide moved to one page per topic: this keeps old links (and their #section) working.
+    var map = {};
+    var h = location.hash.slice(1);
+    location.replace(map[h] || 'guide/index.html');
+  </script>
+</head>
+<body><p>The guide has moved: <a href="guide/index.html">go to the new page</a>.</p></body>
+</html>
